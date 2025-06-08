@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class 11 & 12 Commerce Resources</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+    header {
+      background-color: #283593;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #3f51b5;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 1.5rem;
+    }
+    .pdf-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .pdf-list a {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .pdf-list a:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    footer {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Commerce Notes Hub - Class 11 & 12</h1>
+  </header>
+
+  <nav>
+    <a href="#notes">Notes</a>
+    <a href="#search">Search Q&A</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#login">Login</a>
+  </nav>
+
+  <section id="notes">
+    <h2>PDF Notes</h2>
+    <h3>Class 11</h3>
+    <div class="pdf-list">
+      <a href="Accountancy%2011.pdf" target="_blank">Accountancy 11</a>
+      <a href="Business%2011.pdf" target="_blank">Business Studies 11</a>
+      <a href="Economics%2011.pdf" target="_blank">Economics 11</a>
+    </div>
+    <h3 style="margin-top: 2rem;">Class 12</h3>
+    <div class="pdf-list">
+      <a href="Business%2012.pdf" target="_blank">Business Studies 12</a>
+      <a href="Economics%2012.pdf" target="_blank">Economics 12</a>
+      <a href="Finance%2012.pdf" target="_blank">Finance 12</a>
+    </div>
+  </section>
+
+  <section id="search">
+    <h2>Search for Questions & Answers</h2>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" placeholder="Search Class 11/12 Q&A..." style="width:80%; padding:0.5rem;">
+      <input type="submit" value="Search" style="padding:0.5rem;">
+    </form>
+  </section>
+
+  <section id="feedback">
+    <h2>Submit Feedback</h2>
+    <form action="https://formspree.io/f/mexample" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your feedback..." rows="4" required></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required><br><br>
+      <input type="password" placeholder="Password" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Commerce Resources | Built with ❤️</p>
+    <div id="google_translate_element"></div>
+  </footer>
+
+  <script>
+    // Google Translate
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
